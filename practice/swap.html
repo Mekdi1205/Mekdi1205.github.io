@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    function swap(){
+        let nameText=document.getElementById("123");
+        let alias=document.getElementById("456");
+        //console.log(nameText.value, alias.value);
+        let temp=nameText.value;
+        nameText.value=alias.value;
+        alias.value=temp;
+      }
+      
+    function calc(){
+          let x=  document.getElementById("n1")
+          let y=document.getElementById("n2")
+          let z=document.getElementById("n3")
+         z.value=parseInt(x.value)+parseInt(y.value)
+        }
+       
+        console.log(n1.setAttribute('class','apiClass'))
+        console.log(n1.setAttribute('type','radio'))
+      // set content
+      myp.innerHTML="change from code"+myp.innerHTML;
+       console.log(myp.innerHTML);
+        function useQuery(){
+        let inputs=document.querySelectorAll("textarea.textarea");
+        console.log(inputs);
+    }
+    </script>
+    </head>
+
+    <body>  
+        Name<input id="123" type="text" class="meclass" value="name"/>
+       <br>
+       Alias<input id="456" type="text" value="alias"/>
+        <input type="button" value="swap" onclick="swap();">
+       <br>
+       <br>
+       
+       <input id="n1" type="text" sri="sri">Num1
+    <br>
+    <input id="n2" type="text">Num2
+    <br>
+    <input id="n3" type="textarea">Num3
+    <input type="button" value="calculate" onclick="calc();">
+    <script scr="first.js" type="text/javascript"></script>
+</body>
+</html>
