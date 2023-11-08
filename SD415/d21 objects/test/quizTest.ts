@@ -32,6 +32,7 @@ describe("quiz tests", function () {
     });
 
     it("gradeQuizLabeled -- labeled objects grades for all students", function () {
+    
         assert.deepEqual(gradeQuizLabeled(studentQuizzes, CORRECT_ANSWERS), [
             { id: 101, score: 3 },
             { id: 102, score: 2 },
