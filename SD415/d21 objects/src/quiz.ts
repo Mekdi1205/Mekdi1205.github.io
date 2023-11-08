@@ -2,7 +2,7 @@
 export interface StudentQuiz {
     studentId: number,
     quizAnswers: number[],
-    scores:number
+
 }
 
 export function gradeStudent(studentAnswers:number[], correct: number[]): number {
@@ -37,7 +37,7 @@ export function gradeQuizLabeled(studentId:number,quizAnswers:number[]):StudentQ
  return {
     studentId:studentId,
     quizAnswers:quizAnswers,
-    scores:scores
+    
  }
 }
 //IMPLEMENT THIS
