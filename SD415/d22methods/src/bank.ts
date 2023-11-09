@@ -15,7 +15,7 @@ Add any necessary types to the above bank object.
 type CustomerRecord = {  //interface for the transaction object
     customerId: number;
     customerTransactions: number[];
-}
+};
 
 type Bank = {    //interface for the bank object 
     transactionsDB: CustomerRecord[];
@@ -24,7 +24,7 @@ type Bank = {    //interface for the bank object
     credit: (customerId: number, amount: number) => void;
     getBalance: (customerId: number) => number;
     bankBalance: () => number;
-}
+};
 
 
 export const bank:Bank = { //define bank object as type Bank
