@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@types/chai": "^4.3.10",
+    "@types/mocha": "^10.0.4"
+  }
+}

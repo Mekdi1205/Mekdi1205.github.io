@@ -8,10 +8,10 @@ export const calculator = {
         this.operand2=y;
     },
     sum:function():number{
-        return this.operand1 +this.operand2
+        return this.operand1 +this.operand2;
     },
     multiply:function():number{
-        return this.operand1*this.operand2
+        return this.operand1*this.operand2;
     }
     
 

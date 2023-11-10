@@ -59,7 +59,7 @@ credit(customerId:number,amount:number){
         this.saveTransaction(customerId,amount);
     }
 },
- getBalance(customerId:number){
+ getBalance(customerId:number):number{
     const customer = this.transactionsDB.find(
         (customer) => customer.customerId === customerId
     );
@@ -72,7 +72,7 @@ credit(customerId:number,amount:number){
     }
     return 0;
 },
-bankBalance(){
+bankBalance():number{
     let totalBalance=0;
     for(const customer of this.transactionsDB){
         totalBalance+=this.getBalance(customer.customerId);
